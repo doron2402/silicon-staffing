@@ -38,8 +38,10 @@ a {
 }
 
 a:hover,
-a.active {
-	color: darken(@brand-primary, 10%);
+a.active
+a:active {
+	// color: darken(@brand-primary, 10%);
+	color: @gray-lighter
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -114,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
     			color: white;
     			&:hover,
     			&:focus {
-    				color: @brand-primary;
+    				// color: @brand-primary;
+    				color: @gray-lighter;
     				outline: none;
     			}
     		}
